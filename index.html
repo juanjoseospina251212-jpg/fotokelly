@@ -2,86 +2,24 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Código QR</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Arial, sans-serif;
-  background: #000;
-  color: white;
-}
-
-.app {
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: env(safe-area-inset-top) 20px env(safe-area-inset-bottom);
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
-
-.header {
-  margin-top: 20px;
-}
-
-.header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.card {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 360px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 26px;
-  padding: 26px;
-  backdrop-filter: blur(14px);
-}
-
-.qr {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 12px;
-}
-
-.label {
-  margin-top: 16px;
-  font-size: 1rem;
-  opacity: 0.85;
-}
-
-.footer {
-  font-size: 0.85rem;
-  opacity: 0.6;
-  margin-bottom: 10px;
+img {
+  width: 90vmin;
+  max-width: 400px;
 }
 </style>
 </head>
-
 <body>
-<div class="app">
-
-  <div class="header">
-    <h1>📱 Escanea el código</h1>
-  </div>
-
-  <div class="card">
-    <img src="qr.png" alt="Código QR" class="qr">
-    <div class="label">Apunta tu cámara aquí</div>
-  </div>
-
-  <div class="footer">
-    Página lista para Vercel y GitHub Pages
-  </div>
-
-</div>
+<img src="qr.png" alt="QR">
 </body>
 </html>
